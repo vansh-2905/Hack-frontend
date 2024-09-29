@@ -17,6 +17,20 @@
   scroll-behavior: smooth
 }
 
+@keyframes gradient-xy {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-xy {
+  animation: gradient-xy 3s ease infinite;
+  background-size: 200% 200%;
+}
+
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
